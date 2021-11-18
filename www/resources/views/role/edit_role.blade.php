@@ -38,13 +38,13 @@
                             <br/>
                             @foreach($permissions as $value)
                                 <label>{{ Form::checkbox('permission[]', $value->id,$role->hasPermissionTo($value->name)?true:false, array('class' => 'name')) }}
-                                    {{ $value->name }}</label>
+                                    {{ $value->permission_label }}</label>
                                 <br/>
                             @endforeach
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12">
-                        {{Form::submit('Add role',['class'=>'btn btn-primary btn-sm waves-effect waves-light'])}}
+                        {{Form::submit('Update role',['class'=>'btn btn-primary btn-sm waves-effect waves-light'])}}
                     </div>
 
                     {!! Form::close() !!}

@@ -8,11 +8,12 @@
             <!-- Left Menu Start -->
             <ul class="metismenu list-unstyled" id="side-menu">
                 <li>
-                    <a href="calendar" class="waves-effect">
+                    <a href="{{route('home')}}" class="waves-effect">
                         <i class="mdi mdi-airplay"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
+
                 {{--                <li>--}}
                 {{--                    <a href="javascript: void(0);" class="waves-effect">--}}
                 {{--                        <i class="mdi mdi-airplay"></i><span class="badge badge-pill badge-info float-right">2</span>--}}
@@ -24,14 +25,20 @@
                 {{--                    </ul>--}}
                 {{--                </li>--}}
 
+                <li class="menu-title">Settings</li>
 
-
-
-
-
-                {{--                <li class="menu-title">Components</li>--}}
-
-
+                <li>
+                    <a href="{{route('user.index')}}" class="waves-effect">
+                        <i class="mdi mdi-account"></i>
+                        <span>Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{route('role.index')}}" class="waves-effect">
+                        <i class="mdi mdi-airplay"></i>
+                        <span>Role</span>
+                    </a>
+                </li>
             </ul>
         </div>
         <!-- Sidebar -->
